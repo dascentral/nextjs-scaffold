@@ -4,10 +4,10 @@ This repository contains a [Next.js](https://nextjs.org/) project bootstrapped w
 
 I have modified the installation to leverage my preferred technology stack.
 
-* [Tailwind CSS](https://tailwindcss.com/)
 * [ESLint](https://eslint.org/)
 * [Prettier](https://prettier.io/)
 * [Stylelint](https://stylelint.io/)
+* [Tailwind CSS](https://tailwindcss.com/)
 
 ## Getting Started
 
@@ -56,7 +56,15 @@ yarn add -D prettier eslint-config-prettier eslint-plugin-prettier
 # Install Stylelint
 yarn add -D stylelint stylelint-config-standard stylelint-config-prettier
 
-# Configure ESLint as you see fit
+# Install & configure Tailwind CSS - https://tailwindcss.com/docs/guides/nextjs
+yarn add -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+
+# Remove CSS from the default Next.js scaffolding
+rm styles/Home.module.css
+
+# Configure settings as you see fit
+# ESLint - https://nextjs.org/docs/basic-features/eslint
 
 ```
 
