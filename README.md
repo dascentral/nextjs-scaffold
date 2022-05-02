@@ -2,7 +2,7 @@
 
 This repository contains a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-I have modified the installation to leverage my preferred technology stack.
+I have also added my preferred technologies and utilities.
 
 * [ESLint](https://eslint.org/)
 * [Prettier](https://prettier.io/)
