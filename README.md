@@ -6,6 +6,8 @@ I have modified the installation to leverage my preferred technology stack.
 
 * [Tailwind CSS](https://tailwindcss.com/)
 * [ESLint](https://eslint.org/)
+* [Prettier](https://prettier.io/)
+* [Stylelint](https://stylelint.io/)
 
 ## Getting Started
 
@@ -47,6 +49,12 @@ Here is an inventory of the commands that will get a repository into the current
 ```shell
 # Install Next.js
 npx create-next-app@latest .
+
+# Install Prettier
+yarn add -D prettier eslint-config-prettier eslint-plugin-prettier
+
+# Install Stylelint
+yarn add -D stylelint stylelint-config-standard stylelint-config-prettier
 
 # Configure ESLint as you see fit
 
