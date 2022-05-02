@@ -44,7 +44,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ## Setup Script
 
-Here is an inventory of the commands that will get a repository into the current state.
+Here is an inventory of the commands that will get a repository into a state that matches this one.
 
 ```shell
 # Install Next.js
@@ -63,8 +63,13 @@ npx tailwindcss init -p
 # Remove CSS from the default Next.js scaffolding
 rm styles/Home.module.css
 
-# Configure settings as you see fit
-# ESLint - https://nextjs.org/docs/basic-features/eslint
+# Configure ESLint
+# - https://nextjs.org/docs/basic-features/eslint
 
+# Configure Prettier
+# - https://prettier.io/docs/en/configuration.html
+# - https://github.com/tailwindlabs/prettier-plugin-tailwindcss#installation
+
+# Configure Stylelint
+# - https://stylelint.io/user-guide/configure
 ```
-
