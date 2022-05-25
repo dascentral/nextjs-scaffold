@@ -63,6 +63,9 @@ npx tailwindcss init -p
 # Remove CSS from the default Next.js scaffolding
 rm styles/Home.module.css
 
+# Configure EditorConfig
+# - https://editorconfig.org/
+
 # Configure ESLint
 # - https://nextjs.org/docs/basic-features/eslint
 
@@ -72,4 +75,6 @@ rm styles/Home.module.css
 
 # Configure Stylelint
 # - https://stylelint.io/user-guide/configure
+
+
 ```
