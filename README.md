@@ -9,13 +9,13 @@ I have also added my preferred technologies and utilities.
 * [Stylelint](https://stylelint.io/)
 * [Tailwind CSS](https://tailwindcss.com/)
 
+Note that I am using [Yarn](https://yarnpkg.com/) for Node package management.
+
 ## Getting Started
 
 First, run the development server:
 
 ```bash
-npm run dev
-# or
 yarn dev
 ```
 
