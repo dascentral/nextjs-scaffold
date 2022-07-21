@@ -66,23 +66,6 @@ npx tailwindcss init -p
 # Remove CSS from the default Next.js scaffolding
 rm styles/Home.module.css
 
-# Configure EditorConfig
-# - https://editorconfig.org/
-curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/.editorconfig -o .editorconfig && chmod 644 .editorconfig
-
-# Configure ESLint
-# - https://nextjs.org/docs/basic-features/eslint
-curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/.eslintrc.json -o .eslintrc.json && chmod 644 .eslintrc.json
-
-# Configure Prettier
-# - https://prettier.io/docs/en/configuration.html
-# - https://github.com/tailwindlabs/prettier-plugin-tailwindcss#installation
-curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/.prettierrc.json -o .prettierrc.json && chmod 644 .prettierrc.json
-
-# Configure Stylelint
-# - https://stylelint.io/user-guide/configure
-curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/.editorconfig -o .stylelintrc.json && chmod 644 .stylelintrc.json
-
 ```
 
 ### Configuration
