@@ -59,8 +59,10 @@ yarn add -D prettier eslint-config-prettier eslint-plugin-prettier
 # Install Stylelint
 yarn add -D stylelint stylelint-config-standard stylelint-config-prettier
 
-# Install & configure Tailwind CSS - https://tailwindcss.com/docs/guides/nextjs
+# Install Tailwind CSS - https://tailwindcss.com/docs/guides/nextjs
 yarn add -D tailwindcss postcss autoprefixer prettier-plugin-tailwindcss @tailwindcss/aspect-ratio @tailwindcss/forms @tailwindcss/line-clamp @tailwindcss/typography
+
+# Configure Tailwind CSS
 npx tailwindcss init -p
 
 # Remove CSS from the default Next.js scaffolding
