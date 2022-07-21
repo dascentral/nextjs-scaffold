@@ -13,15 +13,13 @@ Note that I am using [Yarn](https://yarnpkg.com/) for Node package management.
 
 ## Getting Started
 
-To get started with local development, first install the Node.js dependencies:
+To get started with local development, first install the Node.js dependencies and the boot up the development server:
 
 ```shell
+# install Node.js dependencies
 yarn
-```
 
-Then, run the development server:
-
-```bash
+# start development server
 yarn dev
 ```
 
