@@ -84,3 +84,30 @@ curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/.prettier
 curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/.editorconfig -o .stylelintrc.json && chmod 644 .stylelintrc.json
 
 ```
+
+### Configuration
+
+Many of the tools installed above require additional configuration. Relevant docs:
+
+* [EditorConfig](https://editorconfig.org)
+* [ESLint](https://nextjs.org/docs/basic-features/eslint)
+* [Prettier](https://prettier.io/docs/en/configuration.html)
+* [Tailwind CSS Prettier Plugin](https://github.com/tailwindlabs/prettier-plugin-tailwindcss#installation)
+* [Stylelint](https://stylelint.io/user-guide/configure)
+
+You are welcome to download the sample configuration files within this repository and customize further.
+
+```shell
+# EditorConfig
+curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/.editorconfig -o .editorconfig && chmod 644 .editorconfig
+
+# ESLint
+curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/.eslintrc.json -o .eslintrc.json && chmod 644 .eslintrc.json
+
+# Prettier
+curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/.prettierrc.json -o .prettierrc.json && chmod 644 .prettierrc.json
+
+# Stylelint
+curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/.editorconfig -o .stylelintrc.json && chmod 644 .stylelintrc.json
+```
+
