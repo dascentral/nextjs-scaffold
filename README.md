@@ -75,7 +75,6 @@ Many of the tools installed above require additional configuration. Relevant doc
 * [EditorConfig](https://editorconfig.org)
 * [ESLint](https://nextjs.org/docs/basic-features/eslint)
 * [Prettier](https://prettier.io/docs/en/configuration.html)
-* [Tailwind CSS Prettier Plugin](https://github.com/tailwindlabs/prettier-plugin-tailwindcss#installation)
 * [Stylelint](https://stylelint.io/user-guide/configure)
 
 You are welcome to download the sample configuration files within this repository and customize further.
