@@ -19,7 +19,7 @@ To get started with local development, first install the Node.js dependencies:
 yarn
 ```
 
-First, run the development server:
+Run the development server:
 
 ```bash
 yarn dev
