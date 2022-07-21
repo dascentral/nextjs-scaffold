@@ -19,7 +19,7 @@ To get started with local development, first install the Node.js dependencies:
 yarn
 ```
 
-Run the development server:
+Then, run the development server:
 
 ```bash
 yarn dev
@@ -29,15 +29,17 @@ Open [http://localhost:3000](http://localhost:3000) in your browser to view your
 
 ## Learn More
 
+To learn more about the technologies used in this repository, see the following resources.
+
 ### Documentation
 
 - [Next.js](https://nextjs.org/docs)
-- [ESLint](https://eslint.org/docs/latest/user-guide)
-- [Headless UI](https://headlessui.dev) — not yet installed
-- [Prettier](https://prettier.io/docs/en/)
-- [Stylelint](https://stylelint.io/user-guide)
-- [Storybook](https://storybook.js.org/docs/react/get-started/introduction) — net yet installed
 - [Tailwind CSS](https://tailwindcss.com/docs)
+- [ESLint](https://eslint.org/docs/latest/user-guide)
+- [Stylelint](https://stylelint.io/user-guide)
+- [Prettier](https://prettier.io/docs/en/)
+- [Headless UI](https://headlessui.dev) — not yet installed
+- [Storybook](https://storybook.js.org/docs/react/get-started/introduction)
 
 ### Tutorials
 
@@ -57,15 +59,15 @@ yarn add -D prettier eslint-config-prettier eslint-plugin-prettier
 # Install Stylelint
 yarn add -D stylelint stylelint-config-standard stylelint-config-prettier
 
-# Install Tailwind CSS - https://tailwindcss.com/docs/guides/nextjs
+# Install & configure Tailwind CSS - https://tailwindcss.com/docs/guides/nextjs
 yarn add -D tailwindcss postcss autoprefixer prettier-plugin-tailwindcss @tailwindcss/aspect-ratio @tailwindcss/forms @tailwindcss/line-clamp @tailwindcss/typography
-
-# Configure Tailwind CSS
 npx tailwindcss init -p
 
 # Remove CSS from the default Next.js scaffolding
 rm styles/Home.module.css
 
+# Install Storybook
+npx storybook init
 ```
 
 ### Configuration
