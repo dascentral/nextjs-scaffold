@@ -5,7 +5,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "stylelint": "stylelint 'styles/**/*.css'",
+    "stylelint:fix": "stylelint 'styles/**/*.css' --fix"
   },
   "dependencies": {
     "next": "12.1.5",
