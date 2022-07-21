@@ -68,6 +68,7 @@ rm styles/Home.module.css
 
 # Install Storybook
 npx storybook init
+yarn add -D @storybook/addon-a11y
 ```
 
 ### Configuration
