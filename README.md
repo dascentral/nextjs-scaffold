@@ -97,4 +97,4 @@ curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/.editorco
 
 #### Storybook
 
-I have modified Storybook to look for stories within the `/components` folder as opposed to the default `/stories ` folder. I prefer to keep stories listed alongside the component counterpart.
+When using Storybook, I prefer to keep stories listed alongisde their component counterpart. As a result, the Storybook configuration looks stories within `/components` as opposed to `/stories `.
