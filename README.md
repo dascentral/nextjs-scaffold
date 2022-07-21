@@ -97,4 +97,4 @@ curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/.editorco
 
 #### Storybook
 
-When using Storybook, I prefer to keep stories listed alongisde their component counterpart. As a result, the Storybook configuration looks stories within `/components` as opposed to `/stories `.
+When using Storybook, I prefer to keep stories listed alongisde their component counterpart. As a result, the Storybook configuration looks for stories within `/components` as opposed to `/stories `.
