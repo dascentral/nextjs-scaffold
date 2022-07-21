@@ -34,12 +34,12 @@ To learn more about the technologies used in this repository, see the following 
 ### Documentation
 
 - [Next.js](https://nextjs.org/docs)
-- [Tailwind CSS](https://tailwindcss.com/docs)
 - [ESLint](https://eslint.org/docs/latest/user-guide)
-- [Stylelint](https://stylelint.io/user-guide)
-- [Prettier](https://prettier.io/docs/en/)
 - [Headless UI](https://headlessui.dev) — not yet installed
+- [Prettier](https://prettier.io/docs/en/)
+- [Stylelint](https://stylelint.io/user-guide)
 - [Storybook](https://storybook.js.org/docs/react/get-started/introduction) — net yet installed
+- [Tailwind CSS](https://tailwindcss.com/docs)
 
 ### Tutorials
 
