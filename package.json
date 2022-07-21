@@ -10,7 +10,7 @@
     "eslint:fix": "eslint 'pages/**/*.js' '*.js' --fix",
     "stylelint": "stylelint 'styles/**/*.css'",
     "stylelint:fix": "stylelint 'styles/**/*.css' --fix",
-    "storybook": "start-storybook -p 6006",
+    "storybook": "start-storybook -p 6006 --no-open",
     "build-storybook": "build-storybook"
   },
   "dependencies": {
