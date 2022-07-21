@@ -95,3 +95,6 @@ curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/.prettier
 curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/.editorconfig -o .stylelintrc.json && chmod 644 .stylelintrc.json
 ```
 
+#### Storybook
+
+I have modified Storybook to look for stories within the `/components` folder as opposed to the default `/stories ` folder. I prefer to keep stories listed alongside the component counterpart.
