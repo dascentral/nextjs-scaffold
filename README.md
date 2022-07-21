@@ -29,8 +29,6 @@ Open [http://localhost:3000](http://localhost:3000) in your browser to view your
 
 ## Learn More
 
-To learn more about the technologies used in this repository, see the following resources.
-
 ### Documentation
 
 - [Next.js](https://nextjs.org/docs)
