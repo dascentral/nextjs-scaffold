@@ -6,6 +6,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "eslint": "eslint 'pages/**/*.js' '*.js'",
+    "eslint:fix": "eslint 'pages/**/*.js' '*.js' --fix",
     "stylelint": "stylelint 'styles/**/*.css'",
     "stylelint:fix": "stylelint 'styles/**/*.css' --fix"
   },
