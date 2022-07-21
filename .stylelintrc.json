@@ -17,6 +17,7 @@
         ]
       }
     ],
-    "color-hex-case": "lower"
+    "color-hex-case": "lower",
+    "string-quotes": "single"
   }
 }
