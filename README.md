@@ -29,13 +29,13 @@ Open [http://localhost:3000](http://localhost:3000) in your browser to view your
 
 ### Documentation
 
-- [Next.js](https://nextjs.org/docs)
-- [Tailwind CSS](https://tailwindcss.com/docs)
 - [ESLint](https://eslint.org/docs/latest/user-guide)
-- [Stylelint](https://stylelint.io/user-guide)
-- [Prettier](https://prettier.io/docs/en/)
 - [Headless UI](https://headlessui.dev) — not yet installed
+- [Next.js](https://nextjs.org/docs)
+- [Prettier](https://prettier.io/docs/en/)
+- [Stylelint](https://stylelint.io/user-guide)
 - [Storybook](https://storybook.js.org/docs/react/get-started/introduction)
+- [Tailwind CSS](https://tailwindcss.com/docs)
 
 ### Tutorials
 
