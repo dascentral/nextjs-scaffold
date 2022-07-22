@@ -6,6 +6,7 @@ I have also added my preferred technologies and utilities.
 
 * [ESLint](https://eslint.org/)
 * [Prettier](https://prettier.io/)
+* [Storybook](https://storybook.js.org/)
 * [Stylelint](https://stylelint.io/)
 * [Tailwind CSS](https://tailwindcss.com/)
 
