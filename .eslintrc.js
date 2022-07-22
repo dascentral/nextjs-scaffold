@@ -23,5 +23,7 @@ module.exports = {
   plugins: ['react', '@next/eslint-plugin-next', 'prettier'],
   rules: {
     'prettier/prettier': ['error'],
+    'react/prop-types': 0,
+    'react/react-in-jsx-scope': 0,
   },
 };
