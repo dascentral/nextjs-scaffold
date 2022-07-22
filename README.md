@@ -50,7 +50,10 @@ Here is an inventory of the commands that will get a repository into a state tha
 npx create-next-app@latest .
 
 # Install Prettier
-yarn add -D prettier eslint-config-prettier eslint-plugin-prettier
+yarn add -D prettier eslint-config-prettier
+
+# Install ESLint plugins
+yarn add -D eslint-plugin-react eslint-plugin-prettier
 
 # Install Stylelint
 yarn add -D stylelint stylelint-config-standard stylelint-config-prettier
