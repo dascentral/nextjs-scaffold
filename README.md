@@ -13,15 +13,13 @@ Note that I am using [Yarn](https://yarnpkg.com/) for Node package management.
 
 ## Getting Started
 
-To get started with local development, first install the Node.js dependencies:
+To get started with local development, first install the Node.js dependencies and then boot up the development server:
 
 ```shell
+# install Node.js dependencies
 yarn
-```
 
-Run the development server:
-
-```bash
+# start development server
 yarn dev
 ```
 
@@ -31,12 +29,12 @@ Open [http://localhost:3000](http://localhost:3000) in your browser to view your
 
 ### Documentation
 
-- [Next.js](https://nextjs.org/docs)
 - [ESLint](https://eslint.org/docs/latest/user-guide)
 - [Headless UI](https://headlessui.dev) — not yet installed
+- [Next.js](https://nextjs.org/docs)
 - [Prettier](https://prettier.io/docs/en/)
 - [Stylelint](https://stylelint.io/user-guide)
-- [Storybook](https://storybook.js.org/docs/react/get-started/introduction) — net yet installed
+- [Storybook](https://storybook.js.org/docs/react/get-started/introduction)
 - [Tailwind CSS](https://tailwindcss.com/docs)
 
 ### Tutorials
@@ -52,7 +50,10 @@ Here is an inventory of the commands that will get a repository into a state tha
 npx create-next-app@latest .
 
 # Install Prettier
-yarn add -D prettier eslint-config-prettier eslint-plugin-prettier
+yarn add -D prettier eslint-config-prettier
+
+# Install ESLint plugins
+yarn add -D eslint-plugin-react eslint-plugin-prettier
 
 # Install Stylelint
 yarn add -D stylelint stylelint-config-standard stylelint-config-prettier
@@ -66,6 +67,9 @@ npx tailwindcss init -p
 # Remove CSS from the default Next.js scaffolding
 rm styles/Home.module.css
 
+# Install Storybook
+npx storybook init
+yarn add -D @storybook/addon-a11y
 ```
 
 ### Configuration
@@ -93,3 +97,6 @@ curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/.prettier
 curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/.editorconfig -o .stylelintrc.json && chmod 644 .stylelintrc.json
 ```
 
+#### Storybook
+
+When using Storybook, I prefer to keep stories listed alongisde their component counterpart. As a result, the Storybook configuration looks for stories within `/components` as opposed to `/stories `.
