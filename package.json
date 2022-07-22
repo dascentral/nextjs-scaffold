@@ -1,5 +1,5 @@
 {
-  "name": "scaffold-nextjs",
+  "name": "nextjs-scaffold",
   "private": true,
   "scripts": {
     "dev": "next dev",
