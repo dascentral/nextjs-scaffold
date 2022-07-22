@@ -73,7 +73,7 @@ npx storybook init
 yarn add -D @storybook/addon-a11y
 ```
 
-### Configuration
+## Configuration
 
 Many of the tools installed above require additional configuration. Relevant docs:
 
@@ -98,6 +98,6 @@ curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/.prettier
 curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/.editorconfig -o .stylelintrc.json && chmod 644 .stylelintrc.json
 ```
 
-#### Storybook
+### Storybook
 
 When using Storybook, I prefer to keep stories listed alongisde their component counterpart. As a result, the Storybook configuration looks for stories within `/components` as opposed to `/stories `.
