@@ -34,8 +34,8 @@ Open [http://localhost:3000](http://localhost:3000) in your browser to view your
 - [Headless UI](https://headlessui.dev) — not yet installed
 - [Next.js](https://nextjs.org/docs)
 - [Prettier](https://prettier.io/docs/en/)
-- [Stylelint](https://stylelint.io/user-guide)
 - [Storybook](https://storybook.js.org/docs/react/get-started/introduction)
+- [Stylelint](https://stylelint.io/user-guide)
 - [Tailwind CSS](https://tailwindcss.com/docs)
 
 ### Tutorials
