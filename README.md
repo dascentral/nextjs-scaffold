@@ -71,6 +71,7 @@ rm styles/Home.module.css
 # Install Storybook
 npx storybook init
 yarn add -D @storybook/addon-a11y
+yarn add -D @storybook/addon-postcss
 ```
 
 ## Configuration
@@ -100,4 +101,48 @@ curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/.editorco
 
 ### Storybook
 
-When using Storybook, I prefer to keep stories listed alongisde their component counterpart. As a result, the Storybook configuration looks for stories within `/components` as opposed to `/stories `.
+#### Integrating Tailwind CSS
+
+To use Tailwind CSS within Storybook, you must install and configure the `@storybook/addon-postcss` addon.
+
+**Reference:** [https://storybook.js.org/addons/@storybook/addon-postcss](https://storybook.js.org/addons/@storybook/addon-postcss)
+
+The "addons" section of your `.storybook/main.js` will look something like this:
+
+```javascript
+  addons: [
+    '@storybook/addon-links',
+    '@storybook/addon-essentials',
+    '@storybook/addon-interactions',
+    '@storybook/addon-a11y',
+    {
+      name: '@storybook/addon-postcss',
+      options: {
+        postcssLoaderOptions: {
+          implementation: require('postcss'),
+        },
+      },
+    },
+  ],
+
+```
+
+After configuring PostCSS, import the Tailwind styles within your `.storybook/preview.js` file.
+
+```javascript
+import '../styles/globals.css';
+
+export const parameters = {
+  actions: { argTypesRegex: '^on[A-Z].*' },
+  controls: {
+    matchers: {
+      color: /(background|color)$/i,
+      date: /Date$/,
+    },
+  },
+};
+```
+
+#### Components folder
+
+When using Storybook, I prefer to keep stories listed alongisde their component counterpart. As a result, the Storybook configuration within this repository looks for stories within `/components` as opposed to `/stories `.
