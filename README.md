@@ -100,13 +100,11 @@ curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/.editorco
 
 **Documentation:** [https://eslint.org/docs/latest/user-guide/configuring/](https://eslint.org/docs/latest/user-guide/configuring/)
 
+The ESLint configuration file within this repository expands upon the default version included in a new Next.js application and includes several preferred customizations.
+
 ### Prettier
 
 **Documentation:** [https://prettier.io/docs/en/configuration.html](https://prettier.io/docs/en/configuration.html)
-
-### Stylelint
-
-**Documentation:** [https://stylelint.io/user-guide/configure](https://stylelint.io/user-guide/configure)
 
 ### Storybook
 
@@ -163,3 +161,6 @@ module.exports = {
 };
 ```
 
+### Stylelint
+
+**Documentation:** [https://stylelint.io/user-guide/configure](https://stylelint.io/user-guide/configure)
