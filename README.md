@@ -71,7 +71,7 @@ rm styles/Home.module.css
 # Install Storybook
 npx storybook init
 yarn add -D @storybook/addon-a11y
-yarn add -D @storybook/addon-postcss
+yarn add -D @storybook/addon-postcss@2.0.0
 ```
 
 ## Configuration
@@ -150,6 +150,12 @@ export const parameters = {
     },
   },
 };
+```
+
+Lastly, as of this writing, the latest PostCSS addon for Storybook is `^3.0.0-alpha.1` which does not appear to work correctly. I have installed the 2.0.0 version within this repository.
+
+```shell
+yarn add -D @storybook/addon-postcss@2.0.0
 ```
 
 #### Components folder
