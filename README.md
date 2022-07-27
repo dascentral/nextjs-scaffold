@@ -164,6 +164,8 @@ module.exports = {
 };
 ```
 
+For additional guidance, see Tailwind's [Next.js framework-specific installation guide](https://tailwindcss.com/docs/guides/nextjs).
+
 ## Setup Script
 
 Are you starting from scratch? Do you want to match this repository without cloning it?
