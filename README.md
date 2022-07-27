@@ -42,38 +42,6 @@ Open [http://localhost:3000](http://localhost:3000) in your browser to view your
 
 - [Learn Next.js](https://nextjs.org/learn) — an interactive Next.js tutorial
 
-## Setup Script
-
-Here is an inventory of the commands that will get a repository into a state that matches this one.
-
-```shell
-# Install Next.js
-npx create-next-app@latest .
-
-# Install Prettier
-yarn add -D prettier eslint-config-prettier
-
-# Install ESLint plugins
-yarn add -D eslint-plugin-react eslint-plugin-prettier
-
-# Install Stylelint
-yarn add -D stylelint stylelint-config-standard stylelint-config-prettier
-
-# Install Tailwind CSS - https://tailwindcss.com/docs/guides/nextjs
-yarn add -D tailwindcss postcss autoprefixer prettier-plugin-tailwindcss @tailwindcss/aspect-ratio @tailwindcss/forms @tailwindcss/line-clamp @tailwindcss/typography
-
-# Configure Tailwind CSS
-npx tailwindcss init -p
-
-# Remove CSS from the default Next.js scaffolding
-rm styles/Home.module.css
-
-# Install Storybook
-npx storybook init
-yarn add -D @storybook/addon-a11y
-yarn add -D @storybook/addon-postcss@2.0.0
-```
-
 ## Configuration
 
 ### EditorConfig
@@ -97,7 +65,7 @@ The ESLint configuration file within this repository expands upon the default ve
 Feel free to copy my preferred config into your project:
 
 ```shell
-curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/.eslintrc.js -o .eslintrc.js
+curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/.eslintrc.js -o .eslintrc.js && chmod 644 .eslintrc.js
 ```
 
 ### Prettier
@@ -178,7 +146,7 @@ module.exports = {
 Feel free to copy my preferred config into your project:
 
 ```shell
-curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/.editorconfig -o .stylelintrc.json && chmod 644 .stylelintrc.json
+curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/.stylelintrc.json -o .stylelintrc.json && chmod 644 .stylelintrc.json
 ```
 
 ### Tailwind CSS
@@ -202,5 +170,57 @@ module.exports = {
     require('@tailwindcss/typography'),
   ],
 };
+```
+
+## Setup Script
+
+Are you starting from scratch? Do you want to match this repository without cloning it?
+
+This script should get you there.
+
+```shell
+# Install Next.js
+npx create-next-app@latest .
+
+# Install Prettier
+yarn add -D prettier eslint-config-prettier
+
+# Install ESLint plugins
+yarn add -D eslint-plugin-react eslint-plugin-prettier
+
+# Install Stylelint
+yarn add -D stylelint stylelint-config-standard stylelint-config-prettier
+
+# Install Tailwind CSS - https://tailwindcss.com/docs/guides/nextjs
+yarn add -D tailwindcss postcss autoprefixer prettier-plugin-tailwindcss @tailwindcss/aspect-ratio @tailwindcss/forms @tailwindcss/line-clamp @tailwindcss/typography
+
+# Configure Tailwind CSS
+npx tailwindcss init -p
+
+# Remove CSS from the default Next.js scaffolding
+rm styles/Home.module.css
+
+# Install Storybook
+npx storybook init
+yarn add -D @storybook/addon-a11y
+yarn add -D @storybook/addon-postcss@2.0.0
+
+# Download EditorConfig config
+curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/.editorconfig -o .editorconfig && chmod 644 .editorconfig
+
+# Download ESLint config
+curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/.eslintrc.js -o .eslintrc.js && chmod 644 .eslintrc.js
+
+# Download Prettier config
+curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/.prettierrc.json -o .prettierrc.json && chmod 644 .prettierrc.json
+
+# Download StyleLint config
+curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/.stylelintrc.json -o .stylelintrc.json && chmod 644 .stylelintrc.json
+
+# Download Tailwind CSS config
+curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/tailwind.config.js -o tailwind.config.js && chmod 644 tailwind.config.js
+
+# Download PostCSS config
+curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/postcss.config.js -o postcss.config.js && chmod 644 postcss.config.js
 ```
 
