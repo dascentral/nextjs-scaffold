@@ -85,7 +85,6 @@ EditorConfig helps maintain consistent coding styles for multiple developers wor
 Feel free to copy my preferred config into your project:
 
 ```shell
-# download EditorConfig config
 curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/.editorconfig -o .editorconfig && chmod 644 .editorconfig
 ```
 
@@ -98,7 +97,6 @@ The ESLint configuration file within this repository expands upon the default ve
 Feel free to copy my preferred config into your project:
 
 ```shell
-# download ESLint config
 curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/.eslintrc.js -o .eslintrc.js
 ```
 
@@ -109,7 +107,6 @@ curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/.eslintrc
 Feel free to copy my preferred config into your project:
 
 ```shell
-# download Prettier config
 curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/.prettierrc.json -o .prettierrc.json && chmod 644 .prettierrc.json
 ```
 
@@ -175,7 +172,6 @@ module.exports = {
 Feel free to copy my preferred config into your project:
 
 ```shell
-# download StyleLint config
 curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/.editorconfig -o .stylelintrc.json && chmod 644 .stylelintrc.json
 ```
 
