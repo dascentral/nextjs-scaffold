@@ -76,25 +76,18 @@ yarn add -D @storybook/addon-postcss
 
 ## Configuration
 
-Many of the tools installed require or benefit from additional configuration. Feel free to copy my preferred config into any existing project.
-
-```shell
-# EditorConfig
-curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/.editorconfig -o .editorconfig && chmod 644 .editorconfig
-
-# ESLint
-curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/.eslintrc.json -o .eslintrc.json && chmod 644 .eslintrc.json
-
-# Prettier
-curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/.prettierrc.json -o .prettierrc.json && chmod 644 .prettierrc.json
-
-# Stylelint
-curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/.editorconfig -o .stylelintrc.json && chmod 644 .stylelintrc.json
-```
-
 ### EditorConfig
 
 **Documentation:** [https://editorconfig.org](https://editorconfig.org)
+
+EditorConfig helps maintain consistent coding styles for multiple developers working on the same project across various editors and IDEs. The EditorConfig wiki provides examples of [projects that use EditorConfig files](https://github.com/editorconfig/editorconfig/wiki/Projects-Using-EditorConfig).
+
+Feel free to copy my preferred config into your project:
+
+```shell
+# download EditorConfig config
+curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/.editorconfig -o .editorconfig && chmod 644 .editorconfig
+```
 
 ### ESLint
 
@@ -102,9 +95,23 @@ curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/.editorco
 
 The ESLint configuration file within this repository expands upon the default version included in a new Next.js application and includes several preferred customizations.
 
+Feel free to copy my preferred config into your project:
+
+```shell
+# download ESLint config
+curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/.eslintrc.js -o .eslintrc.js
+```
+
 ### Prettier
 
 **Documentation:** [https://prettier.io/docs/en/configuration.html](https://prettier.io/docs/en/configuration.html)
+
+Feel free to copy my preferred config into your project:
+
+```shell
+# download Prettier config
+curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/.prettierrc.json -o .prettierrc.json && chmod 644 .prettierrc.json
+```
 
 ### Storybook
 
@@ -164,3 +171,11 @@ module.exports = {
 ### Stylelint
 
 **Documentation:** [https://stylelint.io/user-guide/configure](https://stylelint.io/user-guide/configure)
+
+Feel free to copy my preferred config into your project:
+
+```shell
+# download StyleLint config
+curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/.editorconfig -o .stylelintrc.json && chmod 644 .stylelintrc.json
+```
+
