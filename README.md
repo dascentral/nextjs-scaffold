@@ -1,16 +1,24 @@
 # Next.js Scaffold
 
+## Introduction
+
 This repository contains a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 I have also added my preferred technologies and utilities.
 
-* [ESLint](https://eslint.org/)
-* [Prettier](https://prettier.io/)
-* [Storybook](https://storybook.js.org/)
-* [Stylelint](https://stylelint.io/)
-* [Tailwind CSS](https://tailwindcss.com/)
+- [ESLint](https://eslint.org/docs/latest/user-guide)
+- [Headless UI](https://headlessui.dev) — not yet installed
+- [Next.js](https://nextjs.org/docs)
+- [Prettier](https://prettier.io/docs/en/)
+- [Storybook](https://storybook.js.org/docs/react/get-started/introduction)
+- [Stylelint](https://stylelint.io/user-guide)
+- [Tailwind CSS](https://tailwindcss.com/docs)
 
 Note that I am using [Yarn](https://yarnpkg.com/) for Node package management.
+
+### Tutorials
+
+- [Learn Next.js](https://nextjs.org/learn) — an interactive Next.js tutorial
 
 ## Getting Started
 
@@ -25,22 +33,6 @@ yarn dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) in your browser to view your application.
-
-## Learn More
-
-### Documentation
-
-- [ESLint](https://eslint.org/docs/latest/user-guide)
-- [Headless UI](https://headlessui.dev) — not yet installed
-- [Next.js](https://nextjs.org/docs)
-- [Prettier](https://prettier.io/docs/en/)
-- [Storybook](https://storybook.js.org/docs/react/get-started/introduction)
-- [Stylelint](https://stylelint.io/user-guide)
-- [Tailwind CSS](https://tailwindcss.com/docs)
-
-### Tutorials
-
-- [Learn Next.js](https://nextjs.org/learn) — an interactive Next.js tutorial
 
 ## Configuration
 
