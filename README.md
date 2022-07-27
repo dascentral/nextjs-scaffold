@@ -71,18 +71,12 @@ rm styles/Home.module.css
 # Install Storybook
 npx storybook init
 yarn add -D @storybook/addon-a11y
+yarn add -D @storybook/addon-postcss
 ```
 
 ## Configuration
 
-Many of the tools installed above require additional configuration. Relevant docs:
-
-* [EditorConfig](https://editorconfig.org)
-* [ESLint](https://nextjs.org/docs/basic-features/eslint)
-* [Prettier](https://prettier.io/docs/en/configuration.html)
-* [Stylelint](https://stylelint.io/user-guide/configure)
-
-You are welcome to download the sample configuration files within this repository and customize further.
+Many of the tools installed require or benefit from additional configuration. Feel free to copy my preferred config into any existing project.
 
 ```shell
 # EditorConfig
@@ -98,6 +92,75 @@ curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/.prettier
 curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/.editorconfig -o .stylelintrc.json && chmod 644 .stylelintrc.json
 ```
 
+### EditorConfig
+
+**Documentation:** [https://editorconfig.org](https://editorconfig.org)
+
+### ESLint
+
+**Documentation:** [https://eslint.org/docs/latest/user-guide/configuring/](https://eslint.org/docs/latest/user-guide/configuring/)
+
+The ESLint configuration file within this repository expands upon the default version included in a new Next.js application and includes several preferred customizations.
+
+### Prettier
+
+**Documentation:** [https://prettier.io/docs/en/configuration.html](https://prettier.io/docs/en/configuration.html)
+
 ### Storybook
 
-When using Storybook, I prefer to keep stories listed alongisde their component counterpart. As a result, the Storybook configuration looks for stories within `/components` as opposed to `/stories `.
+#### Integrating Tailwind CSS
+
+To use Tailwind CSS within Storybook, you must install and configure the `@storybook/addon-postcss` addon. Reference: [https://storybook.js.org/addons/@storybook/addon-postcss](https://storybook.js.org/addons/@storybook/addon-postcss).
+
+The "addons" section of your `.storybook/main.js` will look something like this:
+
+```javascript
+  addons: [
+    '@storybook/addon-links',
+    '@storybook/addon-essentials',
+    '@storybook/addon-interactions',
+    '@storybook/addon-a11y',
+    {
+      name: '@storybook/addon-postcss',
+      options: {
+        postcssLoaderOptions: {
+          implementation: require('postcss'),
+        },
+      },
+    },
+  ],
+
+```
+
+After configuring PostCSS, import the Tailwind styles within your `.storybook/preview.js` file.
+
+```javascript
+import '../styles/globals.css';
+
+export const parameters = {
+  actions: { argTypesRegex: '^on[A-Z].*' },
+  controls: {
+    matchers: {
+      color: /(background|color)$/i,
+      date: /Date$/,
+    },
+  },
+};
+```
+
+#### Components folder
+
+When using Storybook, I prefer to keep stories listed alongisde their component counterpart. As a result, the Storybook configuration within this repository looks for stories within `/components` as opposed to `/stories `.
+
+```javascript
+module.exports = {
+  stories: [
+    '../components/**/*.stories.mdx',
+    '../components/**/*.stories.@(js|jsx|ts|tsx)',
+  ],
+};
+```
+
+### Stylelint
+
+**Documentation:** [https://stylelint.io/user-guide/configure](https://stylelint.io/user-guide/configure)
