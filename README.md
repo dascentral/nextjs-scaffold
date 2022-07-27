@@ -211,6 +211,9 @@ curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/.editorco
 # Download ESLint config
 curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/.eslintrc.js -o .eslintrc.js && chmod 644 .eslintrc.js
 
+# Download .eslintignore
+curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/.eslintignore -o .eslintignore && chmod 644 .eslintignore
+
 # Download Prettier config
 curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/.prettierrc.json -o .prettierrc.json && chmod 644 .prettierrc.json
 
