@@ -194,6 +194,10 @@ npx tailwindcss init -p
 # Remove CSS from the default Next.js scaffolding
 rm styles/Home.module.css
 
+# Download ESLint config
+rm .eslintrc.json
+curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/.eslintrc.js -o .eslintrc.js && chmod 644 .eslintrc.js
+
 # Install Storybook
 npx storybook init
 yarn add -D @storybook/addon-a11y
@@ -201,9 +205,6 @@ yarn add -D @storybook/addon-postcss@2.0.0
 
 # Download EditorConfig config
 curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/.editorconfig -o .editorconfig && chmod 644 .editorconfig
-
-# Download ESLint config
-curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/.eslintrc.js -o .eslintrc.js && chmod 644 .eslintrc.js
 
 # Download .eslintignore
 curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/.eslintignore -o .eslintignore && chmod 644 .eslintignore
