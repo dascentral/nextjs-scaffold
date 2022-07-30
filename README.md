@@ -202,6 +202,7 @@ curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/.eslintrc
 npx storybook init
 yarn add -D @storybook/addon-a11y
 yarn add -D @storybook/addon-postcss@2.0.0
+rm -rf stories
 
 # Download EditorConfig config
 curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/.editorconfig -o .editorconfig && chmod 644 .editorconfig
