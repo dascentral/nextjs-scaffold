@@ -164,7 +164,7 @@ module.exports = {
 };
 ```
 
-For additional guidance, see Tailwind's [Next.js framework-specific installation guide](https://tailwindcss.com/docs/guides/nextjs).
+For additional guidance, see [Tailwind's Next.js framework-specific installation guide](https://tailwindcss.com/docs/guides/nextjs).
 
 ## Setup Script
 
