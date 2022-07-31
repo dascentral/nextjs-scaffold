@@ -223,3 +223,6 @@ curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/tailwind.
 curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/postcss.config.js -o postcss.config.js && chmod 644 postcss.config.js
 ```
 
+## References
+
+* [Streamlining your Tailwind CSS workflow with ESLint + Prettier](https://dev.to/mryechkin/streamlining-your-tailwind-css-workflow-with-eslint-prettier-1hg) — July 2022
