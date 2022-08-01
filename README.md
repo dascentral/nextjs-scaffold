@@ -7,7 +7,6 @@ This repository contains a [Next.js](https://nextjs.org/) project bootstrapped w
 I have also added my preferred technologies and utilities.
 
 - [ESLint](https://eslint.org/docs/latest/user-guide)
-- [Headless UI](https://headlessui.dev) — not yet installed
 - [Next.js](https://nextjs.org/docs)
 - [Prettier](https://prettier.io/docs/en/)
 - [Storybook](https://storybook.js.org/docs/react/get-started/introduction)
@@ -228,8 +227,8 @@ curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/postcss.c
 # Install Next.js
 npx create-next-app@latest .
 
-# Install everything
-yarn add -D prettier \
+# Install everything else
+yarn add -D \
   autoprefixer \
   eslint-config-prettier \
   eslint-plugin-react \
@@ -238,6 +237,7 @@ yarn add -D prettier \
   stylelint-config-standard \
   stylelint-config-prettier \
   postcss \
+  prettier \
   prettier-plugin-tailwindcss \
   tailwindcss \
   @storybook/addon-a11y \
@@ -254,14 +254,17 @@ npx tailwindcss init -p
 rm styles/Home.module.css
 
 # Download configuration files
-curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/.editorconfig -o .editorconfig && \
+rm .eslintrc.json && \
+  curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/.editorconfig -o .editorconfig && \
   curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/.eslintignore -o .eslintignore && \
+  curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/.eslintrc.js -o .eslintrc.js && \
 	curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/.prettierrc.json -o .prettierrc.json && \
   curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/.stylelintrc.json -o .stylelintrc.json && \
   curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/tailwind.config.js -o tailwind.config.js && \
   curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/postcss.config.js -o postcss.config.js && \
   chmod 644 .editorconfig && \
   chmod 644 .eslintignore && \
+  chmod 644 .eslintrc.js && \
   chmod 644 .prettierrc.json && \
   chmod 644 .stylelintrc.json && \
   chmod 644 tailwind.config.js && \
@@ -269,7 +272,6 @@ curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/.editorco
 
 # Install Storybook
 npx storybook init
-yarn add -D @storybook/addon-a11y @storybook/addon-postcss@2.0.0
 rm -rf stories
 ```
 
