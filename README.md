@@ -244,8 +244,6 @@ yarn add -D \
   prettier \
   prettier-plugin-tailwindcss \
   tailwindcss \
-  @storybook/addon-a11y \
-  @storybook/addon-postcss@2.0.0 \
   @tailwindcss/aspect-ratio \
   @tailwindcss/forms \
   @tailwindcss/line-clamp \
@@ -277,6 +275,9 @@ rm .eslintrc.json && \
 # Install Storybook
 npx storybook init
 rm -rf stories
+
+# Install Storybook plugins
+yarn add -D @storybook/addon-a11y @storybook/addon-postcss@2.0.0
 ```
 
 ## References
