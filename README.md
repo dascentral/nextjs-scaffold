@@ -170,7 +170,7 @@ For additional guidance, see [Tailwind's Next.js framework-specific installation
 
 Are you starting from scratch? Do you want to match this repository without cloning it?
 
-This script should get you there.
+### Step-by-Step
 
 ```shell
 # Install Next.js
@@ -222,6 +222,64 @@ curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/tailwind.
 curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/postcss.config.js -o postcss.config.js && chmod 644 postcss.config.js
 ```
 
+### Quick Setup
+
+```shell
+# Install Next.js
+npx create-next-app@latest .
+
+# Install everything
+yarn add -D prettier \
+  autoprefixer \
+  eslint-config-prettier \
+  eslint-plugin-react \
+  eslint-plugin-prettier \
+  stylelint \
+  stylelint-config-standard \
+  stylelint-config-prettier \
+  postcss \
+  prettier-plugin-tailwindcss \
+  tailwindcss \
+  @storybook/addon-a11y \
+  @storybook/addon-postcss@2.0.0 \
+  @tailwindcss/aspect-ratio \
+  @tailwindcss/forms \
+  @tailwindcss/line-clamp \
+  @tailwindcss/typography
+
+# Configure Tailwind CSS
+npx tailwindcss init -p
+
+# Remove CSS from the default Next.js scaffolding
+rm styles/Home.module.css
+
+# Download configuration files
+curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/.editorconfig -o .editorconfig && \
+  curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/.eslintignore -o .eslintignore && \
+	curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/.prettierrc.json -o .prettierrc.json && \
+  curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/.stylelintrc.json -o .stylelintrc.json && \
+  curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/tailwind.config.js -o tailwind.config.js && \
+  curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/postcss.config.js -o postcss.config.js && \
+  chmod 644 .editorconfig && \
+  chmod 644 .eslintignore && \
+  chmod 644 .prettierrc.json && \
+  chmod 644 .stylelintrc.json && \
+  chmod 644 tailwind.config.js && \
+  chmod 644 postcss.config.js
+
+# Install Storybook
+npx storybook init
+yarn add -D @storybook/addon-a11y @storybook/addon-postcss@2.0.0
+rm -rf stories
+```
+
 ## References
 
 * [Streamlining your Tailwind CSS workflow with ESLint + Prettier](https://dev.to/mryechkin/streamlining-your-tailwind-css-workflow-with-eslint-prettier-1hg) — July 2022
+
+## Roadmap
+
+* Move pages & components into an `src/` folder. Update configuration accordingly. e.g, Storybook, etc.
+* Add [ESLint-plugin-tailwind](https://www.npmjs.com/package/eslint-plugin-tailwindcss)
+* Add [HeadlessUI](https://headlessui.com/)
+* Add [Jest](https://jestjs.io/) and a sample test
