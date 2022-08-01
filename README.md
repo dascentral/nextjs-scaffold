@@ -187,6 +187,9 @@ yarn add -D stylelint stylelint-config-standard stylelint-config-prettier
 # Install Tailwind CSS - https://tailwindcss.com/docs/guides/nextjs
 yarn add -D tailwindcss postcss autoprefixer prettier-plugin-tailwindcss @tailwindcss/aspect-ratio @tailwindcss/forms @tailwindcss/line-clamp @tailwindcss/typography
 
+# Install PostCSS plugins
+yarn add -D postcss-import
+
 # Configure Tailwind CSS
 npx tailwindcss init -p
 
@@ -237,6 +240,7 @@ yarn add -D \
   stylelint-config-standard \
   stylelint-config-prettier \
   postcss \
+  postcss-import \
   prettier \
   prettier-plugin-tailwindcss \
   tailwindcss \
