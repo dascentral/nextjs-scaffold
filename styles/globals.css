@@ -5,18 +5,18 @@
  *
  * https://tailwindcss.com/docs/adding-base-styles/
  */
-@tailwind base;
+@import 'tailwindcss/base';
 
 /**
  * Components
  *
  * https://tailwindcss.com/docs/extracting-components/#extracting-css-components-with-apply
  */
-@tailwind components;
+@import 'tailwindcss/components';
 
 /**
  * Utilities
  *
  * https://tailwindcss.com/docs/adding-new-utilities
  */
-@tailwind utilities;
+@import 'tailwindcss/utilities';
