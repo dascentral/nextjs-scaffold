@@ -291,5 +291,7 @@ yarn add -D @storybook/addon-a11y @storybook/addon-postcss@2.0.0
 
 ## Roadmap
 
+* Move pages & components into an `src/` folder. Update configuration accordingly. e.g, Storybook, etc.
 * Add [ESLint-plugin-tailwind](https://www.npmjs.com/package/eslint-plugin-tailwindcss)
+* Add [HeadlessUI](https://headlessui.com/)
 * Add [Jest](https://jestjs.io/) and a sample test
