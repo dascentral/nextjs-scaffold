@@ -7,6 +7,7 @@ This repository contains a [Next.js](https://nextjs.org/) project bootstrapped w
 I have also added my preferred technologies and utilities.
 
 - [ESLint](https://eslint.org/docs/latest/user-guide)
+- [HeadlessUI](https://headlessui.com/)
 - [Next.js](https://nextjs.org/docs)
 - [Prettier](https://prettier.io/docs/en/)
 - [Storybook](https://storybook.js.org/docs/react/get-started/introduction)
@@ -187,6 +188,9 @@ yarn add -D stylelint stylelint-config-standard stylelint-config-prettier
 # Install Tailwind CSS - https://tailwindcss.com/docs/guides/nextjs
 yarn add -D tailwindcss postcss autoprefixer prettier-plugin-tailwindcss @tailwindcss/aspect-ratio @tailwindcss/forms @tailwindcss/line-clamp @tailwindcss/typography
 
+# Install Headless UI
+yarn add -D @headlessui/react
+
 # Install PostCSS plugins
 yarn add -D postcss-import
 
@@ -244,6 +248,7 @@ yarn add -D \
   prettier \
   prettier-plugin-tailwindcss \
   tailwindcss \
+  @headlessui/react \
   @tailwindcss/aspect-ratio \
   @tailwindcss/forms \
   @tailwindcss/line-clamp \
