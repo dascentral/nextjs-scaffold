@@ -4,7 +4,7 @@
 
 This repository contains a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-I have also added my preferred technologies and utilities.
+I have also added several additinoal technologies and utilities.
 
 - [ESLint](https://eslint.org/docs/latest/user-guide)
 - [HeadlessUI](https://headlessui.com/)
@@ -24,7 +24,7 @@ Note that I am using [Yarn](https://yarnpkg.com/) for Node package management.
 
 To get started with local development, first install the Node.js dependencies and then boot up the development server:
 
-```shell
+```bash
 # install Node.js dependencies
 yarn
 
@@ -44,7 +44,7 @@ EditorConfig helps maintain consistent coding styles for multiple developers wor
 
 Feel free to copy my preferred config into your project:
 
-```shell
+```bash
 curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/.editorconfig -o .editorconfig && chmod 644 .editorconfig
 ```
 
@@ -56,7 +56,7 @@ The ESLint configuration file within this repository expands upon the default ve
 
 Feel free to copy my preferred config into your project:
 
-```shell
+```bash
 curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/.eslintrc.js -o .eslintrc.js && chmod 644 .eslintrc.js
 ```
 
@@ -66,7 +66,7 @@ curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/.eslintrc
 
 Feel free to copy my preferred config into your project:
 
-```shell
+```bash
 curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/.prettierrc.json -o .prettierrc.json && chmod 644 .prettierrc.json
 ```
 
@@ -137,7 +137,7 @@ module.exports = {
 
 Feel free to copy my preferred config into your project:
 
-```shell
+```bash
 curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/.stylelintrc.json -o .stylelintrc.json && chmod 644 .stylelintrc.json
 ```
 
@@ -170,9 +170,66 @@ For additional guidance, see [Tailwind's Next.js framework-specific installation
 
 Are you starting from scratch? Do you want to match this repository without cloning it?
 
+### Quick Setup
+
+```bash
+# Install Next.js
+npx create-next-app@latest .
+
+# Install everything else
+yarn add -D \
+  autoprefixer \
+  eslint-config-prettier \
+  eslint-plugin-react \
+  eslint-plugin-prettier \
+  stylelint \
+  stylelint-config-standard \
+  stylelint-config-prettier \
+  postcss \
+  postcss-import \
+  prettier \
+  prettier-plugin-tailwindcss \
+  tailwindcss \
+  @headlessui/react \
+  @tailwindcss/aspect-ratio \
+  @tailwindcss/forms \
+  @tailwindcss/line-clamp \
+  @tailwindcss/typography
+
+# Configure Tailwind CSS
+npx tailwindcss init -p
+
+# Remove CSS from the default Next.js scaffolding
+rm styles/Home.module.css
+
+# Download configuration files
+rm .eslintrc.json && \
+  curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/.editorconfig -o .editorconfig && \
+  curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/.eslintignore -o .eslintignore && \
+  curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/.eslintrc.js -o .eslintrc.js && \
+	curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/.prettierrc.json -o .prettierrc.json && \
+  curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/.stylelintrc.json -o .stylelintrc.json && \
+  curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/tailwind.config.js -o tailwind.config.js && \
+  curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/postcss.config.js -o postcss.config.js && \
+  chmod 644 .editorconfig && \
+  chmod 644 .eslintignore && \
+  chmod 644 .eslintrc.js && \
+  chmod 644 .prettierrc.json && \
+  chmod 644 .stylelintrc.json && \
+  chmod 644 tailwind.config.js && \
+  chmod 644 postcss.config.js
+
+# Install Storybook
+npx storybook init
+rm -rf stories
+
+# Install Storybook plugins
+yarn add -D @storybook/addon-a11y @storybook/addon-postcss@2.0.0
+```
+
 ### Step-by-Step
 
-```shell
+```bash
 # Install Next.js
 npx create-next-app@latest .
 
@@ -226,63 +283,6 @@ curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/tailwind.
 
 # Download PostCSS config
 curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/postcss.config.js -o postcss.config.js && chmod 644 postcss.config.js
-```
-
-### Quick Setup
-
-```shell
-# Install Next.js
-npx create-next-app@latest .
-
-# Install everything else
-yarn add -D \
-  autoprefixer \
-  eslint-config-prettier \
-  eslint-plugin-react \
-  eslint-plugin-prettier \
-  stylelint \
-  stylelint-config-standard \
-  stylelint-config-prettier \
-  postcss \
-  postcss-import \
-  prettier \
-  prettier-plugin-tailwindcss \
-  tailwindcss \
-  @headlessui/react \
-  @tailwindcss/aspect-ratio \
-  @tailwindcss/forms \
-  @tailwindcss/line-clamp \
-  @tailwindcss/typography
-
-# Configure Tailwind CSS
-npx tailwindcss init -p
-
-# Remove CSS from the default Next.js scaffolding
-rm styles/Home.module.css
-
-# Download configuration files
-rm .eslintrc.json && \
-  curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/.editorconfig -o .editorconfig && \
-  curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/.eslintignore -o .eslintignore && \
-  curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/.eslintrc.js -o .eslintrc.js && \
-	curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/.prettierrc.json -o .prettierrc.json && \
-  curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/.stylelintrc.json -o .stylelintrc.json && \
-  curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/tailwind.config.js -o tailwind.config.js && \
-  curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/postcss.config.js -o postcss.config.js && \
-  chmod 644 .editorconfig && \
-  chmod 644 .eslintignore && \
-  chmod 644 .eslintrc.js && \
-  chmod 644 .prettierrc.json && \
-  chmod 644 .stylelintrc.json && \
-  chmod 644 tailwind.config.js && \
-  chmod 644 postcss.config.js
-
-# Install Storybook
-npx storybook init
-rm -rf stories
-
-# Install Storybook plugins
-yarn add -D @storybook/addon-a11y @storybook/addon-postcss@2.0.0
 ```
 
 ## References
