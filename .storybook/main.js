@@ -24,7 +24,7 @@ module.exports = {
   core: {
     builder: '@storybook/builder-webpack5',
   },
-  webpackFinal: async (config, { configType }) => {
+  webpackFinal: async (config) => {
     config.resolve.modules = [path.resolve(__dirname, '..'), 'node_modules'];
 
     config.resolve.alias = {
