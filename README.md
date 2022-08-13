@@ -131,6 +131,33 @@ module.exports = {
 };
 ```
 
+#### Absolute imports
+
+Within many codebases, developers will use `jsconfig.json` to specify an aboslute path alias to simply imports. Storybook does not honor the paths defined within `jsconfig.json` out-of-the-box. The following addition to the `main.js` defines an alias to the `../src` folder via the `@` symbol.
+
+```javascript
+const path = require('path');
+
+module.exports = {
+  //...
+  webpackFinal: async (config, { configType }) => {
+    config.resolve.modules = [
+      path.resolve(__dirname, '..'),
+      'node_modules'
+    ];
+
+    config.resolve.alias = {
+      ...config.resolve.alias,
+      '@': path.resolve(__dirname, '../src'),
+    };
+
+    return config;
+  },
+};
+```
+
+For more details on this topic, check out [issue #11639](https://github.com/storybookjs/storybook/issues/11639) within the Storybook repository.
+
 ### Stylelint
 
 **Documentation:** [https://stylelint.io/user-guide/configure](https://stylelint.io/user-guide/configure)
