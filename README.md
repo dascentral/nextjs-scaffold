@@ -2,9 +2,7 @@
 
 ## Introduction
 
-This repository contains a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
-I have also added several additinoal technologies and utilities.
+This repository contains a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app). I have also added and configured the following technologies and utilities:
 
 - [ESLint](https://eslint.org/docs/latest/user-guide)
 - [HeadlessUI](https://headlessui.com/)
@@ -13,8 +11,7 @@ I have also added several additinoal technologies and utilities.
 - [Storybook](https://storybook.js.org/docs/react/get-started/introduction)
 - [Stylelint](https://stylelint.io/user-guide)
 - [Tailwind CSS](https://tailwindcss.com/docs)
-
-Note that I am using [Yarn](https://yarnpkg.com/) for Node package management.
+- [Yarn](https://yarnpkg.com/)
 
 ### Tutorials
 
@@ -42,9 +39,8 @@ Open [http://localhost:3000](http://localhost:3000) in your browser to view your
 
 EditorConfig helps maintain consistent coding styles for multiple developers working on the same project across various editors and IDEs. The EditorConfig wiki provides examples of [projects that use EditorConfig files](https://github.com/editorconfig/editorconfig/wiki/Projects-Using-EditorConfig).
 
-Feel free to copy my preferred config into your project:
-
 ```bash
+# copy my preferred config into your project
 curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/.editorconfig -o .editorconfig && chmod 644 .editorconfig
 ```
 
@@ -54,9 +50,8 @@ curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/.editorco
 
 The ESLint configuration file within this repository expands upon the default version included in a new Next.js application and includes several preferred customizations.
 
-Feel free to copy my preferred config into your project:
-
 ```bash
+# copy my preferred config into your project
 curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/.eslintrc.js -o .eslintrc.js && chmod 644 .eslintrc.js
 ```
 
@@ -64,9 +59,8 @@ curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/.eslintrc
 
 **Documentation:** [https://prettier.io/docs/en/configuration.html](https://prettier.io/docs/en/configuration.html)
 
-Feel free to copy my preferred config into your project:
-
 ```bash
+# copy my preferred config into your project
 curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/.prettierrc.json -o .prettierrc.json && chmod 644 .prettierrc.json
 ```
 
@@ -99,7 +93,7 @@ The "addons" section of your `.storybook/main.js` will look something like this:
 After configuring PostCSS, import the Tailwind styles within your `.storybook/preview.js` file.
 
 ```javascript
-import '../styles/globals.css';
+import '../src/styles/globals.css';
 
 export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },
@@ -125,15 +119,15 @@ When using Storybook, I prefer to keep stories listed alongisde their component 
 ```javascript
 module.exports = {
   stories: [
-    '../components/**/*.stories.mdx',
-    '../components/**/*.stories.@(js|jsx|ts|tsx)',
+    '../src/components/**/*.stories.mdx',
+    '../src/components/**/*.stories.@(js|jsx|ts|tsx)',
   ],
 };
 ```
 
 #### Absolute imports
 
-Within many codebases, developers will use `jsconfig.json` to specify an aboslute path alias to simply imports. Storybook does not honor the paths defined within `jsconfig.json` out-of-the-box. The following addition to the `main.js` defines an alias to the `../src` folder via the `@` symbol.
+Within many codebases, developers will use `jsconfig.json` to specify an aboslute path alias to simplify imports. Storybook does not honor the paths defined within `jsconfig.json` out-of-the-box. The following addition to the `main.js` defines an alias to the `../src` folder via the `@` symbol.
 
 ```javascript
 const path = require('path');
@@ -162,9 +156,8 @@ For more details on this topic, check out [issue #11639](https://github.com/stor
 
 **Documentation:** [https://stylelint.io/user-guide/configure](https://stylelint.io/user-guide/configure)
 
-Feel free to copy my preferred config into your project:
-
 ```bash
+# copy my preferred config into your project
 curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/.stylelintrc.json -o .stylelintrc.json && chmod 644 .stylelintrc.json
 ```
 
@@ -176,8 +169,8 @@ I have configured Tailwind CSS to account for the addition of code within the `p
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    './pages/**/*.{js,ts,jsx,tsx}',
-    './components/**/*.{js,ts,jsx,tsx}',
+    './src/pages/**/*.{js,ts,jsx,tsx}',
+    './src/components/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
     extend: {},
