@@ -308,7 +308,8 @@ curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/postcss.c
 ## References
 
 * [Streamlining your Tailwind CSS workflow with ESLint + Prettier](https://dev.to/mryechkin/streamlining-your-tailwind-css-workflow-with-eslint-prettier-1hg) — July 2022
-* [Laravel Breeze with Inertia, React, Eslint, Prettier, Pint and Husky](https://www.luckymedia.dev/blog/laravel-breeze-with-inertia-react-eslint-prettier-pint-and-husky) — Sept 2022 — While this article references Laravel, the bulk of the content is relevant to this repository.
+* [Laravel Breeze with Inertia, React, Eslint, Prettier, Pint and Husky](https://www.luckymedia.dev/blog/laravel-breeze-with-inertia-react-eslint-prettier-pint-and-husky) — Sept 2022 — While this article references Laravel, the bulk of the content is relevant to this repository
+* [theodorusclarence/ts-nextjs-tailwind-starter](theodorusclarence/ts-nextjs-tailwind-starter) — Another GitHub template repository that has significantly more happening that what I've gotten to here
 
 ## Roadmap
 
