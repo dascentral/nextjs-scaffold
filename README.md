@@ -228,7 +228,7 @@ rm .eslintrc.json && \
   curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/.editorconfig -o .editorconfig && \
   curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/.eslintignore -o .eslintignore && \
   curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/.eslintrc.js -o .eslintrc.js && \
-	curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/.prettierrc.json -o .prettierrc.json && \
+  curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/.prettierrc.json -o .prettierrc.json && \
   curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/.stylelintrc.json -o .stylelintrc.json && \
   curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/tailwind.config.js -o tailwind.config.js && \
   curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/postcss.config.js -o postcss.config.js && \
