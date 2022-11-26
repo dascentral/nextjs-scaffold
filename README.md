@@ -199,6 +199,7 @@ npx create-next-app@latest .
 # Install everything else
 yarn add -D \
   autoprefixer \
+  eslint \
   eslint-config-prettier \
   eslint-plugin-react \
   eslint-plugin-prettier \
