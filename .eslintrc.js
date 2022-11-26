@@ -12,6 +12,7 @@ module.exports = {
     'plugin:react/recommended',
     'plugin:storybook/recommended',
     'plugin:prettier/recommended',
+    'plugin:tailwindcss/recommended',
     'prettier',
   ],
   parserOptions: {
@@ -20,7 +21,7 @@ module.exports = {
     },
     ecmaVersion: 2020,
   },
-  plugins: ['react', '@next/eslint-plugin-next', 'prettier'],
+  plugins: ['react', '@next/eslint-plugin-next', 'prettier', 'tailwindcss'],
   rules: {
     'prettier/prettier': ['error'],
     'react/prop-types': 0,

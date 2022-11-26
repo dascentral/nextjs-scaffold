@@ -202,6 +202,7 @@ yarn add -D \
   eslint-config-prettier \
   eslint-plugin-react \
   eslint-plugin-prettier \
+  eslint-plugin-tailwindcss \
   stylelint \
   stylelint-config-standard \
   stylelint-config-prettier \
@@ -257,7 +258,7 @@ npx create-next-app@latest .
 yarn add -D prettier eslint-config-prettier
 
 # Install ESLint plugins
-yarn add -D eslint-plugin-react eslint-plugin-prettier
+yarn add -D eslint-plugin-react eslint-plugin-prettier eslint-plugin-tailwindcss
 
 # Install Stylelint
 yarn add -D stylelint stylelint-config-standard stylelint-config-prettier
@@ -314,6 +315,5 @@ curl https://raw.githubusercontent.com/dascentral/nextjs-scaffold/main/postcss.c
 
 ## Roadmap
 
-* Add [ESLint-plugin-tailwind](https://www.npmjs.com/package/eslint-plugin-tailwindcss)
 * Add [Jest](https://jestjs.io/) and a sample test
 * Consider use of [lint-staged](https://github.com/okonet/lint-staged)
